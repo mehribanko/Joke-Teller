@@ -1,0 +1,64 @@
+html{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin:0;
+    background: #C4FDC6;
+
+}
+
+.container{
+    height:100vh;
+    width: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image{
+    display: inherit;
+    height:400px;
+    width:400px;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 900;
+    color: #B5775B;
+    background-color:#FCE252;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 10px rgba(206, 177, 11, 0.6);
+
+}
+
+button:hover{
+    filter:brightness(90%);
+}
+
+button:active{
+    transform: scale(0.98);
+
+}
+
+button:disabled{
+    cursor:default;
+    filter:brightness(50%)
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+
